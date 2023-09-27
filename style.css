@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #2a2a2a;
+	height: 100vh;
+	display: grid;
+	place-content: center;
+}
+.glitchy-text {
+	display: inline-block;
+	height: 60px;
+	color: white;
+	font-family: "VALORANT", sans-serif;
+	font-weight: bolder;
+	padding: 5px;
+	line-height: 60px;
+	text-align: center;
+	transition: all 0.1s;
+}
+.glitchy-text:hover {
+	background-color: white;
+	color: black;
+}
+#param-controls {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+#param-controls input {
+	width: 150px;
+	margin: 0 10px;
+}
+#param-controls input:focus {
+	outline: none;
+}
+#param-speed::-webkit-outer-spin-button,
+#param-speed::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	appearance: none;
+	-moz-appearance: textfield;
+}
